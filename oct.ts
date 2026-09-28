@@ -7,14 +7,14 @@ console.log(reverseString("hello"));
 
 
 
-// function checkEvenOdd(num: number): string {
-//   if (num % 2 === 0) {
-//     return "Even";
-//   }
-//   return "Odd";
-// }
+function checkEvenOdd(num: number): string {
+  if (num % 2 === 0) {
+    return "Even";
+  }
+  return "Odd";
+}
 
-// console.log(checkEvenOdd(10));
+console.log(checkEvenOdd(10));
 
 
 
