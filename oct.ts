@@ -42,3 +42,18 @@ console.log(arraySum([1, 2, 3, 4]));
 // 10
 
 
+
+function countVowels(str: string): number {
+  let count = 0;
+
+  for (let char of str.toLowerCase()) {
+    if ("aeiou".includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countVowels("hello"));
+// 2
