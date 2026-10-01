@@ -57,3 +57,15 @@ function countVowels(str: string): number {
 
 console.log(countVowels("hello"));
 // 2
+
+
+
+
+function isPalindrome(str: string): boolean {
+  let reversed = str.split("").reverse().join("");
+
+  return str === reversed;
+}
+
+console.log(isPalindrome("madam"));
+// true
