@@ -69,3 +69,14 @@ function isPalindrome(str: string): boolean {
 
 console.log(isPalindrome("madam"));
 // true
+
+
+
+
+
+function findSmallest(numbers: number[]): number {
+  return Math.min(...numbers);
+}
+
+console.log(findSmallest([10, 5, 20, 8]));
+// 5
