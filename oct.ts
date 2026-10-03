@@ -80,3 +80,14 @@ function findSmallest(numbers: number[]): number {
 
 console.log(findSmallest([10, 5, 20, 8]));
 // 5
+
+
+
+
+
+function removeDuplicates(numbers: number[]): number[] {
+  return [...new Set(numbers)];
+}
+
+console.log(removeDuplicates([1, 2, 2, 3, 3, 4]));
+// [1, 2, 3, 4]
