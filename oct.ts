@@ -115,3 +115,18 @@ function getEvenNumbers(numbers: number[]): number[] {
 
 console.log(getEvenNumbers([1, 2, 3, 4, 5, 6]));
 // [2, 4, 6]
+
+
+
+function findAverage(numbers: number[]): number {
+  let sum = 0;
+
+  for (let num of numbers) {
+    sum += num;
+  }
+
+  return sum / numbers.length;
+}
+
+console.log(findAverage([10, 20, 30]));
+// 20
