@@ -130,3 +130,20 @@ function findAverage(numbers: number[]): number {
 
 console.log(findAverage([10, 20, 30]));
 // 20
+
+
+
+function countPositive(numbers: number[]): number {
+  let count = 0;
+
+  for (let num of numbers) {
+    if (num > 0) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countPositive([-2, 5, 7, -1, 3]));
+// 3
