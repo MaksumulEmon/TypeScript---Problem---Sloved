@@ -147,3 +147,20 @@ function countPositive(numbers: number[]): number {
 
 console.log(countPositive([-2, 5, 7, -1, 3]));
 // 3
+
+
+
+function findMax(numbers: number[]): number {
+  let max = numbers[0];
+
+  for (let num of numbers) {
+    if (num > max) {
+      max = num;
+    }
+  }
+
+  return max;
+}
+
+console.log(findMax([10, 25, 5, 40, 15]));
+// 40
