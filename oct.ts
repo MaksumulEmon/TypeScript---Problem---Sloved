@@ -164,3 +164,22 @@ function findMax(numbers: number[]): number {
 
 console.log(findMax([10, 25, 5, 40, 15]));
 // 40
+
+
+
+
+
+function findMin(numbers: number[]): number {
+  let min = numbers[0];
+
+  for (let num of numbers) {
+    if (num < min) {
+      min = num;
+    }
+  }
+
+  return min;
+}
+
+console.log(findMin([10, 25, 5, 40, 15]));
+// 5
