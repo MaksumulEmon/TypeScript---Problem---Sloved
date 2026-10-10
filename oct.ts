@@ -183,3 +183,22 @@ function findMin(numbers: number[]): number {
 
 console.log(findMin([10, 25, 5, 40, 15]));
 // 5
+
+
+
+function isPrime(num: number): boolean {
+  if (num < 2) {
+    return false;
+  }
+
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(isPrime(7));
+// true
