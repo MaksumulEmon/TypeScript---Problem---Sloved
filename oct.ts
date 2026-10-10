@@ -202,3 +202,12 @@ function isPrime(num: number): boolean {
 
 console.log(isPrime(7));
 // true
+
+
+
+function countDigits(num: number): number {
+  return Math.abs(num).toString().length;
+}
+
+console.log(countDigits(12345));
+// 5
