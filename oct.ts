@@ -211,3 +211,11 @@ function countDigits(num: number): number {
 
 console.log(countDigits(12345));
 // 5
+
+
+function reverseArray(numbers: number[]): number[] {
+  return numbers.reverse();
+}
+
+console.log(reverseArray([1, 2, 3, 4]));
+// [4, 3, 2, 1]
