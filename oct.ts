@@ -219,3 +219,25 @@ function reverseArray(numbers: number[]): number[] {
 
 console.log(reverseArray([1, 2, 3, 4]));
 // [4, 3, 2, 1]
+
+
+
+
+
+
+function findDuplicates(numbers: number[]): number[] {
+  const duplicates: number[] = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+      if (numbers[i] === numbers[j] && !duplicates.includes(numbers[i])) {
+        duplicates.push(numbers[i]);
+      }
+    }
+  }
+
+  return duplicates;
+}
+
+console.log(findDuplicates([1, 2, 3, 2, 4, 3]));
+// [2, 3]
