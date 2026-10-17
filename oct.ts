@@ -276,6 +276,8 @@ fizzBuzz(15);
 
 
 
+
+
 function checkNumber(num: number): string {
   if (num > 0) {
     return "Positive";
@@ -288,3 +290,16 @@ function checkNumber(num: number): string {
 
 console.log(checkNumber(-5));
 // Negative
+
+function power(base: number, exponent: number): number {
+  let result = 1;
+
+  for (let i = 1; i <= exponent; i++) {
+    result *= base;
+  }
+
+  return result;
+}
+
+console.log(power(2, 3));
+// 8
