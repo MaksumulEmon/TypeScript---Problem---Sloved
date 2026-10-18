@@ -303,3 +303,16 @@ function power(base: number, exponent: number): number {
 
 console.log(power(2, 3));
 // 8
+
+
+
+
+function secondLargest(numbers: number[]): number | undefined {
+  const uniqueNumbers = [...new Set(numbers)];
+  uniqueNumbers.sort((a, b) => b - a);
+
+  return uniqueNumbers[1];
+}
+
+console.log(secondLargest([10, 20, 30, 40]));
+// 30
