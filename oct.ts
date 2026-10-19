@@ -316,3 +316,13 @@ function secondLargest(numbers: number[]): number | undefined {
 
 console.log(secondLargest([10, 20, 30, 40]));
 // 30
+
+
+
+
+function toUpperCase(str: string): string {
+  return str.toUpperCase();
+}
+
+console.log(toUpperCase("hello world"));
+// HELLO WORLD
