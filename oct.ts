@@ -326,3 +326,15 @@ function toUpperCase(str: string): string {
 
 console.log(toUpperCase("hello world"));
 // HELLO WORLD
+
+
+
+function countWords(str: string): number {
+  const words = str.trim().split(/\s+/);
+
+  return str.trim() === "" ? 0 : words.length;
+}
+
+console.log(countWords("I love Zareen"));
+// 3
+
