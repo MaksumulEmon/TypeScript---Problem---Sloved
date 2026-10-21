@@ -338,3 +338,20 @@ function countWords(str: string): number {
 console.log(countWords("I love Zareen"));
 // 3
 
+
+
+
+function sumEven(numbers: number[]): number {
+  let sum = 0;
+
+  for (let num of numbers) {
+    if (num % 2 === 0) {
+      sum += num;
+    }
+  }
+
+  return sum;
+}
+
+console.log(sumEven([1, 2, 3, 4, 5, 6]));
+// 12
