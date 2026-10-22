@@ -355,3 +355,14 @@ function sumEven(numbers: number[]): number {
 
 console.log(sumEven([1, 2, 3, 4, 5, 6]));
 // 12
+
+
+
+
+
+function areEqual(str1: string, str2: string): boolean {
+  return str1 === str2;
+}
+
+console.log(areEqual("hello", "hello"));
+// true
