@@ -366,3 +366,13 @@ function areEqual(str1: string, str2: string): boolean {
 
 console.log(areEqual("hello", "hello"));
 // true
+
+
+
+
+function removeNegative(numbers: number[]): number[] {
+  return numbers.filter((num) => num >= 0);
+}
+
+console.log(removeNegative([-2, 5, -1, 8, 0]));
+// [5, 8, 0]
