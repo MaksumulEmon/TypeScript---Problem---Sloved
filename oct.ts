@@ -376,3 +376,18 @@ function removeNegative(numbers: number[]): number[] {
 
 console.log(removeNegative([-2, 5, -1, 8, 0]));
 // [5, 8, 0]
+
+
+
+function stringLength(str: string): number {
+  let count = 0;
+
+  for (const char of str) {
+    count++;
+  }
+
+  return count;
+}
+
+console.log(stringLength("hello"));
+// 5
