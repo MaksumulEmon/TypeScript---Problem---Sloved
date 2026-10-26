@@ -391,3 +391,14 @@ function stringLength(str: string): number {
 
 console.log(stringLength("hello"));
 // 5
+
+
+
+
+function multiplicationTable(num: number): void {
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${num} x ${i} = ${num * i}`);
+  }
+}
+
+multiplicationTable(5);
