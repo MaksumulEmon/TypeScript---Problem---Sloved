@@ -394,11 +394,19 @@ console.log(stringLength("hello"));
 
 
 
+function findMissing(numbers: number[]): number {
+  const total = (numbers.length + 1) * (numbers.length + 2) / 2;
+  let sum = 0;
 
-function multiplicationTable(num: number): void {
-  for (let i = 1; i <= 10; i++) {
-    console.log(`${num} x ${i} = ${num * i}`);
+  for (const num of numbers) {
+    sum += num;
   }
+
+  return total - sum;
 }
 
-multiplicationTable(5);
+console.log(findMissing([1, 2, 4, 5]));
+// 3
+
+
+
