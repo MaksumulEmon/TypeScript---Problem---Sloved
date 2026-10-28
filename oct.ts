@@ -409,4 +409,23 @@ console.log(findMissing([1, 2, 4, 5]));
 // 3
 
 
+function countOccurrences(
+  numbers: number[],
+  target: number
+): number {
+  let count = 0;
+
+  for (const num of numbers) {
+    if (num === target) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countOccurrences([1, 2, 2, 3, 2, 4], 2));
+// 3
+
+
 
