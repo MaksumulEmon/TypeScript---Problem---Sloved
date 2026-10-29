@@ -429,3 +429,12 @@ console.log(countOccurrences([1, 2, 2, 3, 2, 4], 2));
 
 
 
+function firstCharacter(str: string): string {
+  return str.charAt(0);
+}
+
+console.log(firstCharacter("TypeScript"));
+// T
+
+
+
