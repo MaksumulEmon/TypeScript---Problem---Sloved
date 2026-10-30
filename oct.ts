@@ -451,4 +451,14 @@ console.log(swapNumbers(10, 20));
 // [20, 10]
 
 
+function findCommon(
+  arr1: number[],
+  arr2: number[]
+): number[] {
+  return arr1.filter((num) => arr2.includes(num));
+}
+
+console.log(findCommon([1, 2, 3, 4], [3, 4, 5, 6]));
+// [3, 4]
+
 
