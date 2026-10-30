@@ -438,3 +438,17 @@ console.log(firstCharacter("TypeScript"));
 
 
 
+
+function swapNumbers(a: number, b: number): number[] {
+  let temp = a;
+  a = b;
+  b = temp;
+
+  return [a, b];
+}
+
+console.log(swapNumbers(10, 20));
+// [20, 10]
+
+
+
