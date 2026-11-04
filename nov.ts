@@ -13,3 +13,20 @@ function getLastElement(numbers: number[]): number | undefined {
 
 console.log(getLastElement([10, 20, 30, 40]));
 // 40
+
+
+
+
+
+function firstUnique(str: string): string | undefined {
+  for (let char of str) {
+    if (str.indexOf(char) === str.lastIndexOf(char)) {
+      return char;
+    }
+  }
+
+  return undefined;
+}
+
+console.log(firstUnique("aabbcdde"));
+// c
