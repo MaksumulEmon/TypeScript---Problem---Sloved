@@ -24,9 +24,19 @@ function firstUnique(str: string): string | undefined {
       return char;
     }
   }
-
+  
   return undefined;
 }
 
 console.log(firstUnique("aabbcdde"));
 // c
+
+
+
+
+function celsiusToFahrenheit(celsius: number): number {
+  return (celsius * 9) / 5 + 32;
+}
+
+console.log(celsiusToFahrenheit(25));
+// 77
