@@ -40,3 +40,17 @@ function celsiusToFahrenheit(celsius: number): number {
 
 console.log(celsiusToFahrenheit(25));
 // 77
+
+
+function arrayProduct(numbers: number[]): number {
+  let product = 1;
+
+  for (let num of numbers) {
+    product *= num;
+  }
+
+  return product;
+}
+
+console.log(arrayProduct([2, 3, 4]));
+// 24
