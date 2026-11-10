@@ -54,3 +54,20 @@ function arrayProduct(numbers: number[]): number {
 
 console.log(arrayProduct([2, 3, 4]));
 // 24
+
+
+
+
+
+function isSorted(numbers: number[]): boolean {
+  for (let i = 0; i < numbers.length - 1; i++) {
+    if (numbers[i] > numbers[i + 1]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(isSorted([1, 2, 3, 4, 5]));
+// true
