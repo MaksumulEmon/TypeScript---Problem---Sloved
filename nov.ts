@@ -71,3 +71,13 @@ function isSorted(numbers: number[]): boolean {
 
 console.log(isSorted([1, 2, 3, 4, 5]));
 // true
+
+
+
+
+function difference(a: number, b: number): number {
+  return Math.abs(a - b);
+}
+
+console.log(difference(20, 10));
+// 10
