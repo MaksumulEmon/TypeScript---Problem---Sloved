@@ -81,3 +81,13 @@ function difference(a: number, b: number): number {
 
 console.log(difference(20, 10));
 // 10
+
+
+
+
+function repeatString(str: string, times: number): string {
+  return str.repeat(times);
+}
+
+console.log(repeatString("Hi ", 3));
+// Hi Hi Hi
