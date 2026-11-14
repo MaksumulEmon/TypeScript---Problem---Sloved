@@ -91,3 +91,16 @@ function repeatString(str: string, times: number): string {
 
 console.log(repeatString("Hi ", 3));
 // Hi Hi Hi
+
+
+
+
+function greaterThan(
+  numbers: number[],
+  target: number
+): number[] {
+  return numbers.filter((num) => num > target);
+}
+
+console.log(greaterThan([10, 20, 30, 40], 20));
+// [30, 40]
