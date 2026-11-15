@@ -104,3 +104,14 @@ function greaterThan(
 
 console.log(greaterThan([10, 20, 30, 40], 20));
 // [30, 40]
+
+
+
+
+
+function uppercaseArray(words: string[]): string[] {
+  return words.map((word) => word.toUpperCase());
+}
+
+console.log(uppercaseArray(["hello", "world"]));
+// ["HELLO", "WORLD"]
