@@ -115,3 +115,23 @@ function uppercaseArray(words: string[]): string[] {
 
 console.log(uppercaseArray(["hello", "world"]));
 // ["HELLO", "WORLD"]
+
+
+
+
+
+
+function longestWord(words: string[]): string {
+  let longest = "";
+
+  for (let word of words) {
+    if (word.length > longest.length) {
+      longest = word;
+    }
+  }
+
+  return longest;
+}
+
+console.log(longestWord(["JavaScript", "HTML", "TypeScript"]));
+// TypeScript
