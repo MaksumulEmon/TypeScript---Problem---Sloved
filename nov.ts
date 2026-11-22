@@ -135,3 +135,17 @@ function longestWord(words: string[]): string {
 
 console.log(longestWord(["JavaScript", "HTML", "TypeScript"]));
 // TypeScript
+
+
+
+
+
+function isAnagram(str1: string, str2: string): boolean {
+  const a = str1.toLowerCase().split("").sort().join("");
+  const b = str2.toLowerCase().split("").sort().join("");
+
+  return a === b;
+}
+
+console.log(isAnagram("listen", "silent"));
+// true
