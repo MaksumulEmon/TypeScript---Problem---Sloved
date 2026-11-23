@@ -149,3 +149,13 @@ function isAnagram(str1: string, str2: string): boolean {
 
 console.log(isAnagram("listen", "silent"));
 // true
+
+
+
+
+function findDifference(numbers: number[]): number {
+  return Math.max(...numbers) - Math.min(...numbers);
+}
+
+console.log(findDifference([10, 20, 30, 40]));
+// 30
