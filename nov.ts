@@ -159,3 +159,14 @@ function findDifference(numbers: number[]): number {
 
 console.log(findDifference([10, 20, 30, 40]));
 // 30
+
+
+
+
+
+function removeSpaces(str: string): string {
+  return str.replace(/\s/g, "");
+}
+
+console.log(removeSpaces("Hello TypeScript World"));
+// HelloTypeScriptWorld
